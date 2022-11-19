@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 5.5em;
+  color: var(--black-blue);
+}
+
+h2 {
+  font-size: 3.4em;
+  color: var(--black-blue);
+}
+
+h3 {
+  font-size: 2.1em;
+  color: var(--black-blue);
+}
+
+p {
+  font-size: 2.1em;
+  color: var(--black-blue);
+}
+
+span {
+  font-size: 2.1em;
+  color: var(--black-blue);
+}
+
+button {
+  font-size: 2.1em;
+}
+
+:root {
+  /* colors */
+
+  --black-blue: #000015;
+  --blue: #005d96;
+  --light-blue: #4e9ef6;
+  --yellow: #f2f64e;
+  --white: #ffffff;
+
+  /* tipography */
+  --number-tipography: "Roboto Mono", monospace;
+}
