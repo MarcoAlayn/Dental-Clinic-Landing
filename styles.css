@@ -13,6 +13,7 @@ body {
 
 h1 {
   font-size: 5.5em;
+  font-size: 5.5em;
   color: var(--black-blue);
 }
 
@@ -60,7 +61,6 @@ a {
 /* Header */
 .headerContainer {
   max-height: 100vh;
-  overflow: hidden;
 }
 
 /* navigation container */
@@ -118,10 +118,6 @@ a {
   padding: 0em 0em 0em 10em;
 }
 
-/* text hero */
-.headerContainer .heroContainer .textHeroContainer {
-}
-
 /* title */
 .headerContainer .heroContainer .textHeroContainer h1 {
   display: flex;
@@ -139,13 +135,12 @@ a {
   position: relative;
 }
 
-/* circle form */
+/* image hero background */
 .headerContainer .heroContainer .imageHero .circleA {
   position: absolute;
   background-image: url("./assets/clinic.jpg");
-  background-position: 0.5em;
+  background-position: 35em;
   background-size: cover;
-  /* background-repeat: no-repeat; */
   top: 0%;
   right: 0%;
   width: 60em;
@@ -153,6 +148,7 @@ a {
   border-radius: 50% 0% 0% 50%;
   filter: blur(0.3em), grayscale();
   -webkit-filter: blur(0.3em);
+  z-index: -1;
 }
 
 .headerContainer .heroContainer .imageHero .circleB {
@@ -174,7 +170,6 @@ a {
   width: 7.5em;
   height: 7.5em;
   background: var(--yellow);
-  z-index: 1;
   display: none;
 }
 
@@ -195,3 +190,55 @@ a {
   translate: -20em 0;
   margin: 0em 10em;
 }
+
+/* bar container */
+.headerContainer .barContainer {
+  translate: 0em -5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* bar section A */
+/* bar section B */
+/* bar section C */
+.headerContainer .barContainer .barSectionA,
+.headerContainer .barContainer .barSectionB,
+.headerContainer .barContainer .barSectionC {
+  /* max-width: 33%; */
+  /* background: red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0em 3em;
+}
+
+.headerContainer .barContainer .barSectionA {
+  background: var(--blue);
+  border-radius: 10em 0em 0em 0em;
+  height: 10em;
+}
+
+.headerContainer .barContainer .barSectionB {
+  background: var(--blue);
+  height: 10em;
+}
+
+.headerContainer .barContainer .barSectionC {
+  background: var(--blue);
+  border-radius: 0% 10em 10em 0%;
+  height: 10em;
+}
+
+/* bar section images */
+.headerContainer .barContainer .barSectionA img,
+.headerContainer .barContainer .barSectionB img,
+.headerContainer .barContainer .barSectionC img {
+  max-width: 5em;
+  max-height: 5em;
+  margin-right: 1em;
+}
+
+/* bar section A text */
