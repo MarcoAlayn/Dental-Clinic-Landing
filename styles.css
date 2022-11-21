@@ -12,12 +12,11 @@ body {
 }
 
 h1 {
-  font-size: 4.18em;
   font-size: 5.5em;
 }
 
 h2 {
-  font-size: 2.58em;
+  font-size: 4.18em;
 }
 
 h3 {
@@ -27,6 +26,7 @@ h3 {
 p {
   font-size: 1.6em;
   color: var(--gray);
+  line-height: 1.6em;
 }
 
 span {
@@ -54,6 +54,8 @@ a {
   --secondary-font: "Ubuntu", sans-serif;
   --number-tipography: "Roboto Mono", monospace;
 }
+
+/* ////////////////////////////////HEADER////////////////////////////// */
 
 /* Header */
 .headerContainer {
@@ -154,7 +156,7 @@ a {
 
 /* bar container */
 .headerContainer .barContainer {
-  translate: 0em -3em;
+  translate: 0em -1em;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -208,4 +210,121 @@ a {
 /* bar section A text */
 .headerContainer .barContainer .textBarContainer {
   color: var(--white);
+}
+
+/* ////////////////////////////////WHO WE ARE////////////////////////////// */
+
+/* section container */
+.whoAreSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25em 10em;
+  height: 70vh;
+}
+
+/* images container */
+.whoAreSection .imagesWhoAreSection {
+  display: flex;
+  flex-direction: column;
+}
+
+/* two images */
+.whoAreSection .imagesWhoAreSection img {
+  object-fit: cover;
+  margin: 0em 2em 2em 0em;
+}
+
+/* image A */
+.whoAreSection .imagesWhoAreSection :first-child {
+  width: 55em;
+  height: 25em;
+  border-radius: 150em 100em 100em 0em;
+}
+
+/* image B */
+.whoAreSection .imagesWhoAreSection :last-child {
+  width: 40em;
+  height: 20em;
+  border-radius: 100em 0em 150em 100em;
+  align-self: flex-end;
+}
+
+/* info container */
+.whoAreSection .infoWhoAreSection {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* text container */
+/* .whoAreSection .infoWhoAreSection .textWhoAreSection h2 {
+  background: #0078aa;
+} */
+
+/* text h2 */
+.whoAreSection .infoWhoAreSection .textWhoAreSection h2 {
+  color: var(--black);
+}
+
+.whoAreSection .infoWhoAreSection .textWhoAreSection p {
+  margin: 1em 0em;
+}
+
+/* phone and button container */
+.whoAreSection .infoWhoAreSection .contactWhoAreSection {
+  align-self: center;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* phone icon */
+.whoAreSection .infoWhoAreSection .contactWhoAreSection .iconPhone {
+  height: 1.5em;
+  fill: var(--blue);
+  translate: 0em 0.15em;
+  opacity: 70%;
+}
+
+/* phone number */
+.whoAreSection .infoWhoAreSection .contactWhoAreSection span {
+  font-family: var(--number-tipography);
+  font-weight: 300;
+  color: var(--blue);
+  margin-right: 2em;
+}
+
+/* button */
+.whoAreSection .infoWhoAreSection .contactWhoAreSection button {
+  border: 0.1em solid var(--blue);
+  width: 12em;
+  height: 3.5em;
+  margin-right: 1em;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5em;
+  color: var(--white);
+  background: var(--blue);
+}
+
+/* whatsapp icon */
+.whoAreSection .infoWhoAreSection .contactWhoAreSection .whatsappIcon {
+  fill: #25d366;
+  margin-left: 0.5em;
+  translate: 0em 0em;
+  display: none;
+}
+
+.whoAreSection .infoWhoAreSection .contactWhoAreSection button:hover {
+  background: var(--white);
+  color: var(--black);
+  border: 0.1em solid var(--black);
 }
