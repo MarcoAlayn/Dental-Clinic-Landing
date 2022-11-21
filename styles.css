@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   max-width: 1440px;
   font-size: 62.5%;
@@ -93,7 +96,7 @@ a {
 /* menu links */
 .headerContainer .navContainer .linksContainer a {
   margin-left: 2em;
-  color: var(--yellow);
+  color: var(--white);
   font-weight: 500;
   letter-spacing: 0.15em;
 }
@@ -101,7 +104,7 @@ a {
 /* menu links:hover */
 .headerContainer .navContainer .linksContainer a:hover,
 .headerContainer .navContainer .linksContainer a:active {
-  color: var(--white);
+  color: var(--gray);
 }
 
 /* phone icon */
@@ -110,6 +113,10 @@ a {
   fill: var(--white);
   translate: 0em 0.15em;
   opacity: 70%;
+}
+/* phone icon:hover */
+.headerContainer .navContainer .linksContainer a svg:hover {
+  fill: var(--gray);
 }
 
 /* phone number */
@@ -220,7 +227,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20em 10em 10em 10em;
+  margin: 30em 10em 10em 10em;
   height: 70vh;
 }
 
@@ -335,6 +342,7 @@ a {
   justify-content: center;
   align-items: center;
   height: auto;
+  margin-top: 20em;
 }
 
 .treatmentsSection .treatmentsInfo {
@@ -363,6 +371,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 20em;
 }
 
 .teamSection .teamGroup {
@@ -509,6 +518,7 @@ a {
   font-weight: 500;
   line-height: 4em;
   color: var(--blue);
+  margin-top: 20em;
 }
 
 /* titulo */
