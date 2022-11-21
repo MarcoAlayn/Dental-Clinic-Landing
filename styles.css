@@ -379,3 +379,117 @@ a {
 .teamSection .teamGroup .detailDoctor img {
   border-radius: 20em 20em 20em 0em;
 }
+
+/* ////////////////////////////////CUSTOMERS////////////////////////////// */
+
+/* section container */
+.clientsSection {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  margin: 20em 10em 10em 10em;
+  height: 70vh;
+}
+
+/* images container */
+.clientsSection .imagesClientsSection {
+  display: flex;
+  flex-direction: column;
+}
+
+/* two images */
+.clientsSection .imagesClientsSection img {
+  object-fit: cover;
+  margin: 0em 2em 2em 0em;
+}
+
+/* image A */
+.clientsSection .imagesClientsSection :first-child {
+  width: 55em;
+  height: 25em;
+  border-radius: 150em 100em 100em 0em;
+}
+
+/* image B */
+.clientsSection .imagesClientsSection :last-child {
+  width: 40em;
+  height: 20em;
+  border-radius: 100em 0em 150em 100em;
+  align-self: flex-end;
+}
+
+/* info container */
+.clientsSection .infoClientsSection {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5em;
+}
+
+.clientsSection .infoClientsSection .textClientsSection h2 {
+  margin: 0em 1em 0em 0em;
+}
+
+.clientsSection .infoClientsSection .textClientsSection p {
+  margin: 1em 5em 0em 0em;
+}
+
+/* phone and button container */
+.clientsSection .infoClientsSection .contactClientsSection {
+  align-self: center;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+/* phone icon */
+.clientsSection .infoClientsSection .contactClientsSection .iconPhone {
+  height: 1.5em;
+  fill: var(--blue);
+  translate: 0em 0.15em;
+  opacity: 70%;
+}
+
+/* phone number */
+.clientsSection .infoClientsSection .contactClientsSection span {
+  font-family: var(--number-tipography);
+  font-weight: 300;
+  color: var(--blue);
+  margin-right: 2em;
+}
+
+/* button */
+.clientsSection .infoClientsSection .contactClientsSection button {
+  border: 0.1em solid var(--blue);
+  width: 12em;
+  height: 3.5em;
+  margin-right: 1em;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5em;
+  color: var(--white);
+  background: var(--blue);
+}
+
+/* whatsapp icon */
+.clientsSection .infoClientsSection .contactClientsSection .whatsappIcon {
+  fill: #25d366;
+  margin-left: 0.5em;
+  translate: 0em 0em;
+  display: none;
+}
+
+.clientsSection .infoClientsSection .contactClientsSection button:hover {
+  background: var(--white);
+  color: var(--black);
+  border: 0.1em solid var(--black);
+}
