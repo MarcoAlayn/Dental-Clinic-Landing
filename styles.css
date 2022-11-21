@@ -220,7 +220,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20em 10em;
+  margin: 20em 10em 10em 10em;
   height: 70vh;
 }
 
@@ -354,4 +354,28 @@ a {
   align-items: center;
   margin: 4em 0em;
   line-height: 3.5em;
+}
+
+/* ////////////////////////////////TEAM////////////////////////////// */
+
+.teamSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.teamSection .teamGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.teamSection .teamGroup .detailDoctor {
+  margin: 5em 5em;
+}
+
+.teamSection .teamGroup .detailDoctor img {
+  border-radius: 20em 20em 20em 0em;
 }
