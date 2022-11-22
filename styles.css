@@ -7,6 +7,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   max-width: 1440px;
   font-size: 62.5%;
@@ -305,7 +306,7 @@ a {
 }
 
 /* button */
-.whoAreSection .infoWhoAreSection .contactWhoAreSection button {
+.whoAreSection .infoWhoAreSection .contactWhoAreSection a span {
   border: 0.1em solid var(--blue);
   width: 12em;
   height: 3.5em;
@@ -318,6 +319,7 @@ a {
   border-radius: 5em;
   color: var(--white);
   background: var(--blue);
+  font-weight: 400;
 }
 
 /* whatsapp icon */
@@ -328,10 +330,10 @@ a {
   display: none;
 }
 
-.whoAreSection .infoWhoAreSection .contactWhoAreSection button:hover {
+.whoAreSection .infoWhoAreSection .contactWhoAreSection a span:hover {
   background: var(--white);
-  color: var(--black);
-  border: 0.1em solid var(--black);
+  color: var(--blue);
+  border: 0.1em solid var(--blue);
 }
 
 /* ////////////////////////////////TREATMENTS////////////////////////////// */
@@ -474,7 +476,7 @@ a {
 }
 
 /* button */
-.clientsSection .infoClientsSection .contactClientsSection button {
+.clientsSection .infoClientsSection .contactClientsSection a span {
   border: 0.1em solid var(--blue);
   width: 12em;
   height: 3.5em;
@@ -487,6 +489,7 @@ a {
   border-radius: 5em;
   color: var(--white);
   background: var(--blue);
+  font-weight: 400;
 }
 
 /* whatsapp icon */
@@ -497,10 +500,10 @@ a {
   display: none;
 }
 
-.clientsSection .infoClientsSection .contactClientsSection button:hover {
+.clientsSection .infoClientsSection .contactClientsSection a span:hover {
   background: var(--white);
-  color: var(--black);
-  border: 0.1em solid var(--black);
+  color: var(--blue);
+  border: 0.1em solid var(--blue);
 }
 
 /* ////////////////////////////////CONTACT DETAILS////////////////////////////// */
@@ -569,4 +572,20 @@ a {
   margin-left: 1em;
   fill: var(--gray);
   font-family: var(--secondary-font);
+}
+
+.headerContainer .buttonUp {
+  position: fixed;
+  top: 52.5em;
+  right: 1em;
+  width: 8em;
+  background: transparent;
+  border: none;
+  fill: var(--blue);
+  z-index: 6;
+  opacity: 50%;
+}
+
+.headerContainer .buttonUp:hover {
+  opacity: 100%;
 }
