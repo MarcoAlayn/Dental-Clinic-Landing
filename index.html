@@ -12,11 +12,21 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@300;400;500&family=Ubuntu:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- Header -->
     <header id="header" class="headerContainer">
-      <nav class="navContainer">
+      <nav
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="50"
+        class="navContainer"
+      >
         <img src="./assets/logo.png" alt="Brand logo" />
         <div class="linksContainer">
           <!-- se puede reciclar -->
@@ -42,13 +52,23 @@
       </nav>
       <div class="heroContainer">
         <div class="textHeroContainer">
-          <h1>Nuestro mejor pago es tu sonrisa</h1>
-          <p>
+          <h1
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="150"
+          >
+            Nuestro mejor pago es tu sonrisa
+          </h1>
+          <p
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="150"
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
-        <div class="imageHero">
+        <div data-aos="fade-up" data-aos-duration="1000" class="imageHero">
           <img src="./assets/woman_smiling.png" alt="woman smiling" />
         </div>
       </div>
@@ -99,21 +119,30 @@
     <!-- FirstSection -->
     <!-- se puede reciclar -->
     <section id="about" class="whoAreSection">
-      <div class="imagesWhoAreSection">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-mirror="true"
+        class="imagesWhoAreSection"
+      >
         <img src="./assets/dentist.jpg" alt="dentist image" />
         <img src="./assets/dentist-2.jpg" alt="dentist image two" />
       </div>
       <div class="infoWhoAreSection">
         <div class="textWhoAreSection">
-          <h2>Desde 1999...</h2>
-          <p>
+          <h2 data-aos="fade-left" data-aos-duration="1000">Desde 1999...</h2>
+          <p data-aos="fade-right" data-aos-duration="1000">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
             iusto dicta! Mollitia modi tenetur quia perspiciatis, cumque odit
             temporibus. Facilis accusamus ex id molestias voluptates corrupti
             commodi, eveniet repellendus porro!
           </p>
         </div>
-        <div class="contactWhoAreSection">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="contactWhoAreSection"
+        >
           <a href="https://wa.link/kiit46">
             <span> Agenda tu cita </span>
             <svg
@@ -148,10 +177,15 @@
     <!-- SecondSection -->
     <section id="services" class="treatmentsSection">
       <!-- se puede reciclar -->
-      <h2>Nuestros Tratamientos</h2>
+      <h2 data-aos="fade-up" data-aos-duration="1000">Nuestros Tratamientos</h2>
       <div class="treatmentsInfo">
         <div class="group">
-          <div class="treatmentComponent">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="50"
+            class="treatmentComponent"
+          >
             <img src="./assets/gold-teeth.png" alt="icon one" />
             <h3>Blanqueamiento</h3>
             <p>
@@ -159,7 +193,12 @@
               voluptas.
             </p>
           </div>
-          <div class="treatmentComponent">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="150"
+            class="treatmentComponent"
+          >
             <img src="./assets/tooths.png" alt="icon two" />
             <h3>Carillas Dentales</h3>
             <p>
@@ -167,7 +206,12 @@
               voluptas.
             </p>
           </div>
-          <div class="treatmentComponent">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+            class="treatmentComponent"
+          >
             <img src="./assets/dent.png" alt="icon three" />
             <h3>Ortodoncia</h3>
             <p>
@@ -177,7 +221,12 @@
           </div>
         </div>
         <div class="group">
-          <div class="treatmentComponent">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="50"
+            class="treatmentComponent"
+          >
             <img src="./assets/th.png" alt="icon four" />
             <h3>Periodoncia</h3>
             <p>
@@ -185,7 +234,12 @@
               voluptas.
             </p>
           </div>
-          <div class="treatmentComponent">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="150"
+            class="treatmentComponent"
+          >
             <img src="./assets/tools.png" alt="icon five" />
             <h3>Endodoncia</h3>
             <p>
@@ -193,7 +247,12 @@
               voluptas.
             </p>
           </div>
-          <div class="treatmentComponent">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+            class="treatmentComponent"
+          >
             <img src="./assets/dns.png" alt="icon six" />
             <h3>Prótesis Dentales</h3>
             <p>
@@ -209,19 +268,34 @@
     <!-- ThirdSection -->
     <section class="teamSection">
       <!-- se puede reciclar -->
-      <h2>Nuestro Equipo</h2>
+      <h2 data-aos="fade-up" data-aos-duration="1000">Nuestro Equipo</h2>
       <div class="teamGroup">
-        <div class="detailDoctor">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="50"
+          class="detailDoctor"
+        >
           <img src="./assets/dentist1.jpg" alt="photo" />
           <h3>Dra. Alyssa Mcguire</h3>
           <span>Odontólogo</span>
         </div>
-        <div class="detailDoctor">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="150"
+          class="detailDoctor"
+        >
           <img src="./assets/dentist2.jpg" alt="photo" />
           <h3>Dra. Kristin Kennedy</h3>
           <span>Odontopediatra</span>
         </div>
-        <div class="detailDoctor">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+          class="detailDoctor"
+        >
           <img src="./assets/dentist3.jpg" alt="photo" />
           <h3>Dr. Albert Richardson</h3>
           <span>Cirujano maxilofacial</span>
@@ -233,21 +307,31 @@
     <!-- FourSection -->
     <!-- se puede reciclar -->
     <section class="clientsSection">
-      <div class="imagesClientsSection">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="imagesClientsSection"
+      >
         <img src="./assets/imgCostumer.jpg" alt="dentist image" />
         <img src="./assets/imgCostumer2.jpg" alt="dentist image two" />
       </div>
       <div class="infoClientsSection">
         <div class="textClientsSection">
-          <h2>¡Nuestros clientes ahora le sonrien a la vida!</h2>
-          <p>
+          <h2 data-aos="fade-right" data-aos-duration="1000">
+            ¡Nuestros clientes ahora le sonrien a la vida!
+          </h2>
+          <p data-aos="fade-left" data-aos-duration="1000">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
             iusto dicta! Mollitia modi tenetur quia perspiciatis, cumque odit
             temporibus. Facilis accusamus ex id molestias voluptates corrupti
             commodi, eveniet repellendus porro!
           </p>
         </div>
-        <div class="contactClientsSection">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="contactClientsSection"
+        >
           <a href="https://wa.link/kiit46">
             <span> Agenda tu cita </span>
             <svg
@@ -282,12 +366,22 @@
     <!-- FiveSection -->
     <section id="contact" class="contactDetailsSection">
       <div class="overslide">
-        <h2>Visitanos</h2>
-        <div class="adressContainer">
+        <h2 data-aos="fade-up" data-aos-duration="1000">Visitanos</h2>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="50"
+          class="adressContainer"
+        >
           <span>911 Neptune Court, Kenmar, Missouri.</span>
           <!-- <span>(662)-386-9137</span> -->
         </div>
-        <div class="schedule">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="150"
+          class="schedule"
+        >
           <div class="hoursNdays">
             <span>Lun - Vie</span>
             <p>09:00 - 20:00</p>
@@ -306,7 +400,12 @@
     <!--end FiveSection -->
 
     <!-- FooterSection -->
-    <section class="footerSection">
+    <section
+      data-aos="fade-right"
+      data-aos-duration="1000"
+      data-aos-delay="150"
+      class="footerSection"
+    >
       <p>todos los derechos reservados</p>
       <p>terminos de uso</p>
       <div class="icons">
